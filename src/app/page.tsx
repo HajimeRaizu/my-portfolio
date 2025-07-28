@@ -31,7 +31,14 @@ export default function Home() {
   return (
     <div className="flex flex-col h-[100vh] bg-[rgb(91,44,117)]">
       <div className="grid grid-flow-col grid-rows-6 grid-cols-14 overflow-hidden gap-10 p-[10px] grow w-full bg-[url('/background.jpg')] bg-cover bg-center">
-        
+        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">1</div>
+        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">2</div>
+        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">3</div>
+        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">4</div>
+        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">5</div>
+        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">6</div>
+        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">7</div>
+        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">8</div>
       </div>
 
 
