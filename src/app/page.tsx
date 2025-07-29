@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
+  const applicationStyle = "w-[100%] h-fit max-h-[100%] py-2 flex flex-col items-center justify-center bg-[rgba(255,255,255,0.1)] rounded-[5px] text-[rgba(255,255,255,0.8)] text-sm cursor-pointer";
   
   useEffect(() => {
     const interval = setInterval(() => {
@@ -30,15 +31,18 @@ export default function Home() {
 
   return (
     <div className="flex flex-col h-[100vh] bg-[rgb(91,44,117)]">
-      <div className="grid grid-flow-col grid-rows-6 grid-cols-14 overflow-hidden gap-10 p-[10px] grow w-full bg-[url('/background.jpg')] bg-cover bg-center">
-        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">1</div>
-        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">2</div>
-        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">3</div>
-        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">4</div>
-        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">5</div>
-        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">6</div>
-        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">7</div>
-        <div className="w-[70px] h-[70px] bg-blue-500 flex items-center justify-center">8</div>
+      <div className="grid grid-flow-col grid-rows-6 grid-cols-14 overflow-hidden gap-y-[10px] gap-x-2 p-[10px] grow w-full bg-[url('/background.jpg')] bg-cover bg-center">
+        <div className={`${applicationStyle}`}>
+          <img src="/windows.png" alt="Windows Icon" width={32} height={32} />
+          <span className="text-center">Windows Start yehey nice</span>
+        </div>
+        <div className={`${applicationStyle}`}>2</div>
+        <div className={`${applicationStyle}`}>3</div>
+        <div className={`${applicationStyle}`}>4</div>
+        <div className={`${applicationStyle}`}>5</div>
+        <div className={`${applicationStyle}`}>6</div>
+        <div className={`${applicationStyle}`}>7</div>
+        <div className={`${applicationStyle}`}>8</div>
       </div>
 
 
@@ -59,7 +63,7 @@ export default function Home() {
         <div className="flex justify-center items-center w-[4%] h-[95%] m-10px pt-[2px] pb-[2px] pl-[1px] pr-[1px] rounded-[5px] border-1 border-[rgba(0,0,0,0)] hover:border-1 hover:border-[rgba(255,255,255,0.2)] hover:bg-[rgba(255,255,255,0.1)]">
           <div 
             className="w-[70%] h-[80%] bg-cover bg-center bg-no-repeat] rounded-[2px]"
-            style={{ backgroundImage: 'linear-gradient(120deg, rgba(255,255,255,0.2), rgba(0,0,0,0.2)), url(/windows.png)' }}
+            style={{ backgroundImage: 'linear-gradient(120deg, rgba(255,255,255,0.2), rgba(75,75,75,0.2), rgba(0,0,0,0.2)), url(/windows.png)' }}
           ></div>
         </div>
       </div>
