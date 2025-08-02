@@ -13,7 +13,7 @@ export default function Desktop(){
           setIsOpen("hidden");
         }}
         >
-          <iframe src="/files/resume.pdf" width="60%" height="90%" title={"PDF Viewer"}/>
+          <iframe src="/files/resume.pdf#toolbar=0&navpanes=0" width="60%" height="90%" title={"PDF Viewer"}/>
       </div>
       
       <div className="z-1 grid grid-flow-col grid-rows-6 grid-cols-14 overflow-hidden gap-y-[10px] gap-x-2 p-[10px] h-full w-full bg-[url('/background.jpg')] bg-cover bg-center">
