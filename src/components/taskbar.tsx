@@ -27,7 +27,7 @@ export default function TaskBar(){
   ].join('/');
 
   return(
-    <div className="relative flex items-center justify-center h-[50px] w-full bg-[rgba(26,26,26,0.8)] border-t-1 border-[rgba(255,255,255,0.2)] overflow-hidden">
+    <div className="z-3 relative flex items-center justify-center h-[50px] w-full bg-[rgba(30,25,33,1)] border-t-1 border-[rgba(255,255,255,0.2)] overflow-hidden">
       <div title="Show desktop" className="absolute right-[0.5px] h-[100%] flex items-center pl-3 pr-1 cursor-default group">
         <span className="text-[rgba(100,100,100,1)] text-[130%] opacity-0 group-hover:opacity-100 transition-opacity duration-0 delay-0">|</span>
       </div>
